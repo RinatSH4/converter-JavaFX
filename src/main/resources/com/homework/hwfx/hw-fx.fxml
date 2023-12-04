@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="260.0" style="-fx-background-color: #828282;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.homework.hwfx.HWController">
+   <children>
+      <ChoiceBox id="Box" fx:id="chbox" layoutX="20.0" layoutY="118.0" prefWidth="150.0" />
+      <Label alignment="CENTER" prefHeight="68.0" prefWidth="260.0" style="-fx-background-color: #4C4C4D;" text="Конвертер" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="255.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textEdit" alignment="CENTER" layoutX="20.0" layoutY="68.0" onKeyReleased="#keyReleased" prefHeight="32.0" prefWidth="230.0" style="-fx-background-color: #828282; -fx-border-color: #4C4C4D; -fx-border-radius: 5; -fx-text-fill: white;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="20.0" layoutY="156.0" text="Значение в тоннах:" textFill="#2f2f2f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="203.0" text="Значение в килограммах:" textFill="#2f2f2f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="249.0" text="Значение в граммах:" textFill="#2f2f2f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="tLabel" layoutX="20.0" layoutY="179.0" textFill="#2f2f2f" />
+      <Label fx:id="kgLabel" layoutX="20.0" layoutY="226.0" textFill="#2f2f2f" />
+      <Label fx:id="gLabel" layoutX="20.0" layoutY="276.0" textFill="#2f2f2f" />
+   </children>
+</AnchorPane>
